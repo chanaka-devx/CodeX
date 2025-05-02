@@ -2,29 +2,29 @@
 using namespace std;
 
 int main() {
-    double num1, num2;
+    double num_1, num_2;
     char op;
     cout << "Enter first number: ";
-    cin >> num1;
+    cin >> num_1;
     cout << "Enter operator (+, -, *, /): ";
     cin >> op;
     cout << "Enter second number: ";
-    cin >> num2;
+    cin >> num_2;
 
     double result;
     switch(op) {
         case '+':
-            result = num1 + num2;
+            result = num_1 + num_2;
             break;
         case '-':
-            result = num1 - num2;
+            result = num_1 - num_2;
             break;
         case '*':
-            result = num1 * num2;
+            result = num_1 * num_2;
             break;
         case '/':
-            if(num2 != 0)
-                result = num1 / num2;
+            if(num_2 != 0)
+                result = num_1 / num_2;
             else {
                 cout << "Error: Division by zero!" << endl;
                 return 1;
